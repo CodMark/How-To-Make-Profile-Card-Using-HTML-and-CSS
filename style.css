@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ab93ff;
+}
+.frem{
+    width: 19rem;
+    height: 23rem;
+    background: white;
+    border-radius: 23px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+}
+.frem::before{
+    content: '';
+    width: 17rem;
+    height: 26rem;
+    position: absolute;
+    background: #ffffffbd;
+    border-radius: 23px;
+    top: -25px;
+}
+.frem::after{
+    content: '';
+    width: 14rem;
+    height: 28rem;
+    position: absolute;
+    background: #ffffff82;
+    border-radius: 23px;
+    top: -44px;
+}
+.frem .logo{
+    width: 90px;
+    height: 90px;
+    background: url('./Lisa.jfif');
+    background-position: -38px -7px;
+    background-size: 9rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    border: 5px solid #3ea4ff;
+}
+.frem .name{
+    margin-top: 3px;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 600;
+    text-shadow: 3px 2px 2px #0000005e;
+}
+.frem .photo-area{
+    width: 100%;
+    height: 14rem;
+    background: #f7f7f7;
+    border-radius: 23px;
+    margin-top: 7px;
+    overflow: hidden;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+.frem .photo-area img{
+    width: 5rem;
+    height: 115px;
+    border-radius: 12px;
+    margin: 3px;
+    object-fit: cover;
+    cursor: pointer;
+}
